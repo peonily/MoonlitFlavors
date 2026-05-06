@@ -132,7 +132,92 @@ if (document.querySelector(".category-strip") && document.querySelector(".recipe
 const recipeTemplate = document.querySelector("[data-recipe-template]");
 
 if (recipeTemplate) {
-  const recipeCatalog = {};
+  const recipeCatalog = {    "classic-cheeseburger": {
+      category: "Lunch",
+      title: "Classic Cheeseburger",
+      description:
+        "A juicy, classic cheeseburger with melted cheese, pickles, and fresh vegetables on a toasted bun.",
+      image: "https://pub-67a5abc27003416587fe5c40c5d22db4.r2.dev/recipe-generator/2026-05-06/1778085652168-1778085652112-cheese-burger-202605061739.jpeg",
+      alt: "A close-up of a classic cheeseburger with fries and ketchup on a wooden board.",
+      prepTime: "15 min",
+      cookTime: "20 min",
+      servings: "4",
+      difficulty: "Easy",
+      nutrition: {
+        calories: "520",
+        protein: "24g",
+        carbs: "48g",
+        fat: "26g",
+      },
+      ingredients: [
+        "4 beef patties (1/2 inch thick)",
+        "4 slices American cheese",
+        "4 hamburger buns",
+        "4 slices red onion",
+        "4 slices tomato",
+        "4 leaves lettuce",
+        "4 pickle slices",
+        "4 tbsp mayonnaise",
+        "4 tbsp ketchup",
+        "4 tbsp mustard",
+        "4 tbsp butter",
+      ],
+      instructions: [
+        "Preheat a grill or skillet to medium-high heat.",
+        "Season the beef patties with salt and pepper.",
+        "Cook the patties for 4-5 minutes per side, or until browned and cooked through.",
+        "Place a slice of cheese on each patty during the last minute of cooking to melt.",
+        "Toast the hamburger buns with butter until golden brown.",
+        "Spread mayonnaise on the bottom half of each bun.",
+        "Layer the lettuce, tomato, red onion, pickle slices, and cheeseburger patty on the bottom bun.",
+        "Top with the other half of the bun and serve with fries and ketchup.",
+      ],
+      related: [],
+    },
+    "strawberry-white-chocolate-cookies": {
+      category: "Desserts",
+      title: "Strawberry White Chocolate Cookies",
+      description:
+        "Soft, chewy cookies studded with fresh strawberries and white chocolate chips, dusted with powdered sugar.",
+      image: "https://pub-67a5abc27003416587fe5c40c5d22db4.r2.dev/recipe-generator/2026-05-06/1778085860137-1778085860080-strawberry-cookies-202605061737.jpeg",
+      alt: "Strawberry white chocolate cookies on a wooden table with a glass of milk and fresh strawberries.",
+      prepTime: "20 min",
+      cookTime: "12 min",
+      servings: "12",
+      difficulty: "Easy",
+      nutrition: {
+        calories: "520",
+        protein: "3g",
+        carbs: "65g",
+        fat: "25g",
+      },
+      ingredients: [
+        "1 cup (2 sticks) unsalted butter, softened",
+        "1 cup granulated sugar",
+        "1 large egg",
+        "2 teaspoons vanilla extract",
+        "3 cups all-purpose flour",
+        "1 teaspoon baking soda",
+        "1/2 teaspoon salt",
+        "1 cup white chocolate chips",
+        "1 cup fresh strawberries, diced",
+        "1/4 cup powdered sugar, for dusting",
+      ],
+      instructions: [
+        "Preheat oven to 350°F (175°C). Line baking sheets with parchment paper.",
+        "In a large bowl, cream together softened butter and granulated sugar until light and fluffy.",
+        "Beat in the egg and vanilla extract until fully combined.",
+        "In a separate bowl, whisk together flour, baking soda, and salt.",
+        "Gradually add the dry ingredients to the wet ingredients, mixing until just combined.",
+        "Fold in white chocolate chips and diced strawberries.",
+        "Scoop tablespoon-sized portions of dough onto prepared baking sheets, spacing them about 2 inches apart.",
+        "Bake for 10-12 minutes, or until edges are lightly golden.",
+        "Allow cookies to cool on the baking sheet for 5 minutes before transferring to a wire rack.",
+        "Dust cooled cookies with powdered sugar before serving.",
+      ],
+      related: ["classic-cheeseburger", "chocolate-chip-cookies", "strawberry-shortcake"],
+    },
+};
 
   const getSlugFromPath = () => {
     const match = window.location.pathname.match(/\/recipes\/([^/]+)\.html$/);
