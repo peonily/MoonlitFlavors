@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes | Moonlit Flavors</title>
+    <meta
+      name="description"
+      content="Browse the full Moonlit Flavors recipe collection by category."
+    />
+    <meta name="monetization" content="$moonlit-flavors" />
+    <meta name="p:domain_verify" content="4e0ddfc2a9a0471173a81529345d2760" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <!-- SECTION: header -->
+      <header class="site-header">
+        <div class="container nav-wrap">
+          <a class="brand" href="index.html">Moonlit Flavors</a>
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav class="site-nav" id="site-nav" aria-label="Primary">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link is-current" href="categories.html">Categories</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            <a
+              class="nav-link"
+              href="https://www.pinterest.com/MoonlitFlavors/"
+              target="_blank"
+              rel="noreferrer"
+              >Pinterest</a
+            >
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <!-- SECTION: page intro -->
+        <section class="page-hero">
+          <div class="container">
+            <div class="page-hero-card">
+              <span class="eyebrow">Recipe Directory</span>
+              <h1 class="section-heading" data-category-results-title>All Recipes</h1>
+              <p class="section-copy" data-category-results-copy>
+                Browse the full Moonlit Flavors recipe collection, or filter by category.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION: browse categories -->
+        <section class="section-space" style="padding-top: 1rem;">
+          <div class="container">
+            <div class="category-strip" aria-label="Recipe categories">
+              <button class="category-card" type="button" data-category="Breakfast" aria-pressed="false">
+                <h3 class="category-name">Breakfast</h3>
+              </button>
+              <button class="category-card" type="button" data-category="Lunch" aria-pressed="false">
+                <h3 class="category-name">Lunch</h3>
+              </button>
+              <button class="category-card" type="button" data-category="Dinner" aria-pressed="false">
+                <h3 class="category-name">Dinner</h3>
+              </button>
+              <button class="category-card" type="button" data-category="Desserts" aria-pressed="false">
+                <h3 class="category-name">Desserts</h3>
+              </button>
+              <button class="category-card" type="button" data-category="Snacks" aria-pressed="false">
+                <h3 class="category-name">Snacks</h3>
+              </button>
+              <button class="category-card" type="button" data-category="Drinks &amp; Cocktails" aria-pressed="false">
+                <h3 class="category-name">Drinks &amp; Cocktails</h3>
+              </button>
+              <button class="category-card" type="button" data-category="Soups &amp; Stews" aria-pressed="false">
+                <h3 class="category-name">Soups &amp; Stews</h3>
+              </button>
+              <button class="category-card" type="button" data-category="Salads" aria-pressed="false">
+                <h3 class="category-name">Salads</h3>
+              </button>
+              <button class="category-card" type="button" data-category="Baking &amp; Bread" aria-pressed="false">
+                <h3 class="category-name">Baking &amp; Bread</h3>
+              </button>
+              <button class="category-card" type="button" data-category="Pasta &amp; Noodles" aria-pressed="false">
+                <h3 class="category-name">Pasta &amp; Noodles</h3>
+              </button>
+              <button class="category-card" type="button" data-category="Vegan" aria-pressed="false">
+                <h3 class="category-name">Vegan</h3>
+              </button>
+              <button class="category-card" type="button" data-category="Grilling &amp; BBQ" aria-pressed="false">
+                <h3 class="category-name">Grilling &amp; BBQ</h3>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION: recipes -->
+        <section class="section-space" id="recipes" style="padding-top: 0;">
+          <div class="container">
+            <div class="recipes-grid">
+              <div class="empty-recipes">
+                <h3>No recipes are published yet.</h3>
+                <p>The Moonlit Flavors recipe directory is ready for the next generated recipe.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

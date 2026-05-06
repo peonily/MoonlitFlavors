@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moonlit Flavors | Editorial Recipes for Modern Home Cooks</title>
+    <meta
+      name="description"
+      content="Discover elevated recipes, curated categories, and globally inspired home cooking at Moonlit Flavors."
+    />
+    <meta name="monetization" content="$moonlit-flavors" />
+    <meta name="p:domain_verify" content="4e0ddfc2a9a0471173a81529345d2760" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <!-- SECTION: header -->
+      <header class="site-header">
+        <div class="container nav-wrap">
+          <a class="brand" href="index.html">Moonlit Flavors</a>
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav class="site-nav" id="site-nav" aria-label="Primary">
+            <a class="nav-link is-current" href="index.html">Home</a>
+            <a class="nav-link" href="categories.html">Categories</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            <a
+              class="nav-link"
+              href="https://www.pinterest.com/MoonlitFlavors/"
+              target="_blank"
+              rel="noreferrer"
+              >Pinterest</a
+            >
+          </nav>
+        </div>
+      </header>
+
+      <!-- SECTION: leaderboard ad -->
+      <div class="ad-shell">
+        <div class="container">
+          <!-- AdSense / Ezoic ad unit: Leaderboard — below navbar -->
+          <div class="ad-slot ad-leaderboard"></div>
+        </div>
+      </div>
+
+      <main>
+        <!-- SECTION: hero -->
+        <section class="hero">
+          <div class="container hero-inner">
+            <div class="hero-content">
+              <span class="eyebrow">Moonlit Flavors</span>
+              <h1 class="hero-title">Moonlit Flavors</h1>
+              <p class="hero-copy">
+                A late-evening kitchen journal for thoughtful meals, glowing tables,
+                and recipes ready to be written into the collection.
+              </p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="categories.html">Explore Categories</a>
+                <a class="button button-dark" href="recipes.html">View Recipes</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION: browse categories -->
+        <section class="section-space">
+          <div class="container">
+            <span class="eyebrow">Browse by Category</span>
+            <h2 class="section-heading">A pantry of moods, meals, and cravings.</h2>
+            <p class="section-copy">
+              Tap a category to filter the featured collection and move through
+              breakfasts, dinners, desserts, and everything in between.
+            </p>
+            <div class="category-strip" aria-label="Recipe categories">
+              <button class="category-card" type="button" data-category="Breakfast" aria-pressed="false">
+                <div class="category-emoji">🍳</div>
+                <h3 class="category-name">Breakfast</h3>
+                <p class="category-meta">Golden starts and slow mornings.</p>
+              </button>
+              <button class="category-card" type="button" data-category="Lunch" aria-pressed="false">
+                <div class="category-emoji">🥗</div>
+                <h3 class="category-name">Lunch</h3>
+                <p class="category-meta">Fresh plates with midday polish.</p>
+              </button>
+              <button class="category-card" type="button" data-category="Dinner" aria-pressed="false">
+                <div class="category-emoji">🍽️</div>
+                <h3 class="category-name">Dinner</h3>
+                <p class="category-meta">Comforting centerpieces worth gathering for.</p>
+              </button>
+              <button class="category-card" type="button" data-category="Desserts" aria-pressed="false">
+                <div class="category-emoji">🍰</div>
+                <h3 class="category-name">Desserts</h3>
+                <p class="category-meta">Sweet finales with a luxe finish.</p>
+              </button>
+              <button class="category-card" type="button" data-category="Snacks" aria-pressed="false">
+                <div class="category-emoji">🧆</div>
+                <h3 class="category-name">Snacks</h3>
+                <p class="category-meta">Small bites for grazing elegantly.</p>
+              </button>
+              <button
+                class="category-card"
+                type="button"
+                data-category="Drinks &amp; Cocktails"
+                aria-pressed="false"
+              >
+                <div class="category-emoji">🍹</div>
+                <h3 class="category-name">Drinks &amp; Cocktails</h3>
+                <p class="category-meta">Poured, shaken, stirred, and sparkling.</p>
+              </button>
+              <button
+                class="category-card"
+                type="button"
+                data-category="Soups &amp; Stews"
+                aria-pressed="false"
+              >
+                <div class="category-emoji">🍲</div>
+                <h3 class="category-name">Soups &amp; Stews</h3>
+                <p class="category-meta">Bowls with depth, warmth, and patience.</p>
+              </button>
+              <button class="category-card" type="button" data-category="Salads" aria-pressed="false">
+                <div class="category-emoji">🥙</div>
+                <h3 class="category-name">Salads</h3>
+                <p class="category-meta">Layered textures dressed to impress.</p>
+              </button>
+              <button
+                class="category-card"
+                type="button"
+                data-category="Baking &amp; Bread"
+                aria-pressed="false"
+              >
+                <div class="category-emoji">🍞</div>
+                <h3 class="category-name">Baking &amp; Bread</h3>
+                <p class="category-meta">Oven rituals and buttery rewards.</p>
+              </button>
+              <button
+                class="category-card"
+                type="button"
+                data-category="Pasta &amp; Noodles"
+                aria-pressed="false"
+              >
+                <div class="category-emoji">🍝</div>
+                <h3 class="category-name">Pasta &amp; Noodles</h3>
+                <p class="category-meta">Silky twirls and slurpable comfort.</p>
+              </button>
+              <button class="category-card" type="button" data-category="Vegan" aria-pressed="false">
+                <div class="category-emoji">🌱</div>
+                <h3 class="category-name">Vegan</h3>
+                <p class="category-meta">Plant-forward dishes with serious style.</p>
+              </button>
+              <button
+                class="category-card"
+                type="button"
+                data-category="Grilling &amp; BBQ"
+                aria-pressed="false"
+              >
+                <div class="category-emoji">🔥</div>
+                <h3 class="category-name">Grilling &amp; BBQ</h3>
+                <p class="category-meta">Smoke, char, and backyard drama.</p>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION: in-content ad -->
+        <section class="section-space" style="padding-top: 0;">
+          <div class="container">
+            <!-- AdSense / Ezoic ad unit: In-content rectangle -->
+            <div class="ad-slot ad-rectangle"></div>
+          </div>
+        </section>
+
+        <!-- SECTION: featured recipes -->
+        <section class="section-space" id="featured-recipes" style="padding-top: 0;">
+          <div class="container">
+            <span class="eyebrow">Featured Recipes</span>
+            <h2 class="section-heading">Weeknight polish, weekend romance.</h2>
+            <p class="section-copy">
+              A curated edit of recipes that look striking on the table and feel
+              intuitive in the kitchen.
+            </p>
+            <div class="recipes-grid">
+              <div class="empty-recipes">
+                <h3>No recipes are published yet.</h3>
+                <p>New Moonlit Flavors recipes will appear here after they are generated.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION: pinterest banner -->
+        <section class="feature-banner">
+          <div class="container">
+            <div class="banner-panel">
+              <span class="eyebrow">Pinned for Later</span>
+              <h2 class="banner-title">
+                Discover flavors from every corner of the world.
+              </h2>
+              <p class="banner-copy">
+                Follow Moonlit Flavors on Pinterest for tablescape inspiration, weeknight
+                ideas, and recipes that feel collected from a beautiful stack of magazines.
+              </p>
+              <a
+                class="button button-dark"
+                href="https://www.pinterest.com/MoonlitFlavors/"
+                target="_blank"
+                rel="noreferrer"
+                >Visit Pinterest</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION: footer ad -->
+        <section class="section-space" style="padding-top: 0;">
+          <div class="container">
+            <!-- AdSense / Ezoic ad unit: Leaderboard — above footer -->
+            <div class="ad-slot ad-leaderboard"></div>
+          </div>
+        </section>
+      </main>
+
+      <!-- SECTION: footer -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <a class="footer-logo" href="index.html">Moonlit Flavors</a>
+              <p>Recipes worth savoring.</p>
+            </div>
+            <div>
+              <h2 class="eyebrow">Navigate</h2>
+              <div class="footer-links">
+                <a class="footer-link" href="index.html">Home</a>
+                <a class="footer-link" href="categories.html">Categories</a>
+                <a class="footer-link" href="about.html">About</a>
+                <a class="footer-link" href="privacy-policy.html">Privacy Policy</a>
+              </div>
+            </div>
+            <div>
+              <h2 class="eyebrow">Social</h2>
+              <div class="footer-socials">
+                <a
+                  class="footer-social"
+                  href="https://www.pinterest.com/MoonlitFlavors/"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 2C6.477 2 2 6.273 2 11.545c0 3.884 2.46 7.223 5.968 8.69-.083-.738-.158-1.87.033-2.676.173-.73 1.114-4.65 1.114-4.65s-.285-.55-.285-1.362c0-1.276.765-2.228 1.718-2.228.81 0 1.201.58 1.201 1.275 0 .777-.514 1.938-.779 3.015-.222.903.473 1.639 1.403 1.639 1.683 0 2.976-1.694 2.976-4.138 0-2.164-1.619-3.677-3.929-3.677-2.677 0-4.246 1.916-4.246 3.897 0 .772.309 1.6.694 2.049a.278.278 0 0 1 .064.265c-.07.292-.228.902-.259 1.028-.041.168-.136.204-.316.123-1.177-.522-1.912-2.16-1.912-3.476 0-2.828 2.147-5.427 6.19-5.427 3.25 0 5.777 2.215 5.777 5.177 0 3.09-2.03 5.579-4.847 5.579-.946 0-1.836-.472-2.139-1.03l-.582 2.174c-.21.789-.779 1.778-1.16 2.38A10.227 10.227 0 0 0 12 21.091c5.523 0 10-4.273 10-9.546C22 6.273 17.523 2 12 2Z"
+                    />
+                  </svg>Pinterest</a
+                >
+                <a class="footer-social" href="#"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7Zm10.75 1.65a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2.2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6Z"
+                    />
+                  </svg>Instagram</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">© 2025 Moonlit Flavors. All rights reserved.</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

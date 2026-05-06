@@ -1,0 +1,14 @@
+{
+  "name": "moonlit-flavors",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static recipe site with a local AI recipe generator admin UI.",
+  "scripts": {
+    "admin": "node scripts/generator-ui-server.js",
+    "generate:recipes": "node scripts/generate-recipe-pages.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
+

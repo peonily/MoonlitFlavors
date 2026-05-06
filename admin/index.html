@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moonlit Flavors Recipe Generator</title>
+    <link rel="stylesheet" href="/admin/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Moonlit Flavors AI kitchen</p>
+        <h1>Turn a folder of food photos into live recipe pages.</h1>
+        <p class="subhead">
+          Queue many dish images. The local server processes one at a time, sends each to R2,
+          asks OpenRouter for recipe data, updates the catalog, and regenerates Recipe Rich Pin pages.
+        </p>
+      </section>
+
+      <section class="workspace">
+        <form id="uploadForm" class="card uploader">
+          <label class="dropzone" for="imageInput">
+            <input id="imageInput" name="image" type="file" accept="image/*" multiple required />
+            <span class="drop-title">Drop or choose recipe images</span>
+            <span class="drop-note">Batch mode runs one image at a time. JPG, PNG, or WEBP under 12 MB each.</span>
+          </label>
+
+          <div id="previewWrap" class="preview-wrap" hidden></div>
+
+          <div class="queue-actions">
+            <button id="submitButton" type="submit">Start Batch</button>
+            <button id="clearButton" class="ghost-button" type="button">Clear Queue</button>
+          </div>
+          <p id="status" class="status" role="status"></p>
+        </form>
+
+        <section class="card results" aria-live="polite">
+          <div class="results-head">
+            <div>
+              <h2>Batch Queue</h2>
+              <p id="summary" class="empty">Generated recipe pages, R2 image URLs, and run logs will appear here.</p>
+            </div>
+            <a class="site-preview-link" href="/site/" target="_blank" rel="noreferrer">Open Updated Homepage</a>
+          </div>
+
+          <div id="queueList" class="queue-list" hidden></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="/admin/app.js" type="module"></script>
+  </body>
+</html>
