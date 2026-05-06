@@ -458,7 +458,7 @@ const renderRecipesDirectoryPage = (catalog) => `<!DOCTYPE html>
       content="Browse the full ${SITE_NAME} recipe collection by category."
     />
     <meta name="monetization" content="$${SITE_SLUG}" />
-    <meta name="p:domain_verify" content="4e0ddfc2a9a0471173a81529345d2760" />
+    <meta name="p:domain_verify" content="5bc73876ffc822d8428d418f0fc972a9"/>
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
   </head>
